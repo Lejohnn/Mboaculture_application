@@ -1,20 +1,41 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Blank test
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+  <ion-header collapse="condense" class="header">
+    <ion-toolbar class="toolbar">
+      <!-- <ion-buttons slot="start">
+        <ion-menu-button color="dark">
+          
+        </ion-menu-button>
+      </ion-buttons> -->
     </ion-toolbar>
   </ion-header>
+  <!-- <div >
+  </div> -->
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+  <swiper-container class="culture">
+    <!-- <swiper-slide class="taille"><img src="../assets/img/Fang-beti-Slider.jpg" alt=""></swiper-slide>
+    <swiper-slide class="taille"><img src="../assets/img/images.jpg" alt=""></swiper-slide>
+    <swiper-slide class="taille"><img src="../assets/img/Un-plat.jpg" alt=""></swiper-slide> -->
+  </swiper-container>
+  
+
+  <swiper-container [slidesPerView]="2" [loop]="true">
+    <swiper-slide><img src="../assets/img/drums.jpg" alt=""><strong>Musique</strong></swiper-slide>
+    <swiper-slide><img src="../assets/img/rice.jpg" alt=""><strong>Gastronomie</strong></swiper-slide>
+    <!-- <swiper-slide><img src="../assets/img/eau.png" alt=""></swiper-slide> -->
+  </swiper-container>
+  <swiper-container [slidesPerView]="2" [loop]="true">
+
+    <swiper-slide><img src="../assets/img/africans.jpg" alt=""><strong>Population</strong></swiper-slide>
+    <swiper-slide><img src="../assets/img/soccer.jpg" alt=""><strong>Sport</strong></swiper-slide>
+    <!-- <swiper-slide><img src="../assets/img/enfants.png" alt=""></swiper-slide> -->
+  </swiper-container>
 </ion-content>

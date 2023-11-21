@@ -1,3 +1,16 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" menuId="pearl_side" class="bg_side" type="overlay">
+      <ion-content>
+        <ion-menu-toggle auto-hide="false">
+          <ion-item [routerLink]="['']">
+            <ion-label>Accueil</ion-label>
+          </ion-item>
+   
+          </ion-menu-toggle>
+          
+      </ion-content>
+    </ion-menu>
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
 </ion-app>
